@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> 
+  <script src="main.js"></script>
+  
+</body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">OSHIRT</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index_1.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="item.html">Catalog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="secondform.html">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+<header class="page-header header container-fluid">
+<div class="overlay"></div>
+<div class ="description">
+    <br><br><br><br><br><br><br><br><br>
+    
+    <h1>Login</h1>
+    
+    <form class="form-signin" action="LoginServlet" method="POST">
+        <div class="container"> 
+    
+        <label style="color:white" for="uname"><b>Username</b></label>
+        <input type ="text" class="input-block-level" name="email" placeholder="Email Address">
+        <br>
+        <label style="color:white"  for="psw"><b>Password</b></label>
+        <input type ="password" class="input-block-level" name="Password" placeholder="password">
+        <br>
+        <label style="color:white" class="checkbox">
+            <input type="checkbox" value="remember-me"> Remember me
+        </label>
+        <br>
+        <a><button class="btn btn-large btn-primary" type ="submit">Sign in  </button></a>
+        <br>
+        <a href= "index_1.html" ><button class="btn btn-large btn-primary">Cancel</button></a>
+        </div> 
+    </form>
+</div>
+</header> 
+
+<div class="container features">
+  <div class="row">
+    <div class="col-lg-4 col-md-4 col-sm-12">
+      <h3 class="feature-title">Member Rewards</h3>
+      <img src="columnPhoto1.jpeg" class="img-fluid"/>
+      <p>Join our Members programs for Exclusive products, discounts and rewards. </p>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12">
+      <h3 class="feature-title">Customer Service</h3>
+      <img src="columnPhoto2.jpeg" class="img-fluid">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis.</p>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12"> 
+        <h3 class="feature-title">Get in Touch!</h3>
+<div class="form-group">
+  <input type="text" class="form-control" placeholder="Name" name="">
+</div>
+<div class="form-group">
+  <input type="email" class="form-control" placeholder="Email Address" name="email">
+    </div>
+    <div class="form-group">
+    <textarea class="form-control" rows="4"></textarea>
+    </div>
+    <input type="submit" class="btn btn-secondary btn-block" value="Send" name="">
+    </div>
+  </div> 
+</div>
+ 
+<footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-8 col-sm-12">
+      <h6 class="text-uppercase font-weight-bold">Additional Information</h6>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis.</p>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12">
+      <h6 class="text-uppercase font-weight-bold">Contact</h6>
+      <p>742 Evergreen Terrace, Springfield, Califoria.
+      <br/>info@mywebsite.com
+      <br/>+ 01 000 00 00
+      <br/>+ 01 000 00 00</p>
+    </div>
+  </div>
+  <div class="footer-copyright text-center">© 2020 Copyright: MyWebsite.com</div>
+</footer>
+</html>
