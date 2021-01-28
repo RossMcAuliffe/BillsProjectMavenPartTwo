@@ -23,8 +23,16 @@ public class UserDAO {
 
     public User getUserByEmail(String email) {
 
-  
-        User tempUser = new User();
+       if (email.equals("admin@admin.com")) {
+           User user1 = new User(1,"admin@admin.com","Admin","Ross","McAuliffe",IConstants.USER_TYPE_ADMIN);
+           return user1;
+       }
+       
+       User user2 = new User(1, "user@user.com", "User", "Bill","Emerson", IConstants.USER_TYPE_GENERAL_USER);
+       return user2;
+        
+    
+  /**      User tempUser = new User();
         
         tempUser.setEmail("admin@admin.com");
         tempUser.setId(1);
@@ -33,6 +41,9 @@ public class UserDAO {
         tempUser.setPassword("Admin");
         tempUser.setUserType(IConstants.USER_TYPE_ADMIN);
         return tempUser;
+        
+        */
+  
 
     }
 
