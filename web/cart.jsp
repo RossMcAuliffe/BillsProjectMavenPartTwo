@@ -6,7 +6,20 @@
     <title>SHIRT Cart</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="cart.css">
-    
+    <style>
+        body {
+            background-color: white;
+        }
+        
+        input.type[submit] {
+              border:1px solid #ffffff;
+              background:#333333;
+              border-radius: 10px;
+              color:#fff;
+        }
+            
+        
+    </style>
 </head>
 <body>
     <!-- Navigation -->
@@ -42,7 +55,6 @@
     <br><br><br><br><br><br>
     
     <h1>Your cart</h1>
-    <br><br>
     <table class="center">
       <tr>
         <th>Quantity</th>
@@ -66,7 +78,7 @@
             </form>
         </td>
         <td><c:out value='${item.product.name}'/></td><br>
-        <td><c:out value='${item.product.imageLocation}'/></td>
+        <td><img style='widht: 20em; height:10em;' src="images/${item.product.imageLocation}" alt=""></td>
         <td><c:out value='${item.product.description}'/></td>
         <td><c:out value='${item.product.price}'/></td>  
         <td>
